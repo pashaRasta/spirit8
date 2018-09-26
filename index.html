@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/stylecss.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet"><!--slogan-->
+
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"><!--slogan span-->
+	<link rel="stylesheet" href="js/js.js">
+
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet"><!--ul li a-->
+<link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC" rel="stylesheet"><!--.grid_text h3-->
+<link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet"><!--grid_text span-->
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet"><!--grid_text h1-->
+<link rel="stylesheet" href="js/jQuery.js">
+
+
+
+</head>
+<body>
+<header>
+	 <div class="header_menu content">
+			<div class="logo_menu">
+
+				<h1>Spirit8</h1>
+				<nav>
+					<ul>      
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">ABOUT </a></li>
+						<li><a href="#">SERVICES</a></li>
+						<li><a href="#">PORTFOLIO</a></li>
+						<li><a href="#">TESTIMONIALS</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="slogan">
+				<h2>WELCOM ON<span>SPIRIT8</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.</p>
+			</div>
+
+			<div class="button_row">
+				<button></button>
+			</div>
+
+	 </div>
+</header>
+
+
+	 <div class="conteiner_grid content">
+	 		<div class="grid_item">
+	 		</div>
+	 
+	 		
+
+	 		<div class="grid_text">
+	 			<div class="text_p">
+	 				<h3>about us</h3>
+	 				<h1>some words</h1><span> about us</span>
+	 			</div>
+	 			<hr>
+	 			<div class="text_p2">
+	 				<p>We love building and rebuilding brands through our  specific sk </p>
+	 			</div>
+	 			<div class="text_p3">
+	 				<p><span>&#10026;Mission</span> - We deliver uniqueness and qualsity</p>
+					<p><span>&#10026;Skills</span> - Delivering fast and excellent results</p>
+	 				<p><span>&#10026;Clients</span> - Satisfied clients thanks to our experience</p>
+	 				<div class="texp_png">
+	 				
+	 					<a href="">browse our work</a>
+	 				</div>
+	 			</div>
+
+			</div>
+
+	 </div>
+
+<div class="meet_team content">
+	<div class="meet_item">
+		<h1>meet</h1>
+		<span>our team</span>
+	</div>
+	<div class="meet_item1">
+		<div class="item1 carousel"></div>
+		<h1>Jason Statham   </h1><span>Knife designer</span>
+		<p>Do not seek to change what has come before. Seek to create that</p>
+	</div>
+	<div class="meet_item2">
+		<div class="item2 carousel"></div>
+		<h1>Van Damme   </h1><span>No English</span>
+		<p>Do not seek to change what has come before. Seek to create that</p>
+	</div>
+	<div class="meet_item3 carousel">
+		<div class="item3"></div>
+		<h1>Sylvester Stallone</h1><span> Cigar Lover</span>
+		<p>Do not seek to change what has come before. Seek to create that</p>
+	</div>
+	<div class="meet_item4 carousel">
+		<div class="item4"></div>
+		<h1>Jet Li</h1><span> I need more money  </span>
+		<p>Do not seek to change what has come before. Seek to create that</p>
+	</div>
+
+
+
+</div>
+
+
+</body>
+
+<script>
+  var carousels = document.querySelectorAll('#carousels .carousel');
+  var currentCarousel = 0;
+  var carouselInterval = setInterval(nextCarousel,5000); /* Интервал между картинками */
+
+  function nextCarousel(){
+	carousels[currentCarousel].className = 'carousel';
+	currentCarousel = (currentCarousel+1)%carousels.length;
+	carousels[currentCarousel].className = 'carousel demonstration';
+} 
+</script>
+</html>
